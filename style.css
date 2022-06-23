@@ -1,0 +1,85 @@
+*, *::after, *::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #1B1540;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box
+{
+    background: white;
+
+    width: 500px;
+    height: 500px;
+
+}
+
+.animated-box
+{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.arrow-box
+{
+    margin-left: 100px;
+
+    height: 300px;
+    width: 300px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.btn
+{
+    background: white;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background: red;
+}
+.left-arrow
+{
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 75% 0% 25% 75% / 50% 100% 0% 50%;
+}
+
+.right-arrow
+{
+    grid-column: 3;
+    grid-row: 2;
+    border-radius: 25% 75% 75% 25% / 0% 50% 50% 0%;
+}
+
+.up-arrow
+{
+    grid-column: 2;
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0%;
+}
+
+.down-arrow
+{
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 0% 0% 50% 50% /0% 0% 100% 100%
+}
