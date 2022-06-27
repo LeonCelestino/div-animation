@@ -7,55 +7,55 @@ const movingToTop = document.querySelector(".up-arrow");
 const movingToBottom = document.querySelector(".down-arrow");
 const box = document.querySelector(".box");
 /* pixel */
-let pxRight = 0;
-let pxTop = 0;
+let pxX = 0;
+let pxY = 0;
 /* interval */
 let interval;
 /* functions */
 movingToRight.addEventListener("mousedown", ()=>{
     interval = setInterval(()=> {
-        pxRight+= 1;
-        box.style.left = pxRight+ "px";
+        pxX+= 1;
+        box.style.left = pxX+ "px";
         
-        if (pxRight > 250)
+        if (pxX > 250)
         {
-            pxRight = 0;
+            pxX = 0;
         } 
     }, 10);
 })
 
 movingToLeft.addEventListener("mousedown", ()=>{
     interval = setInterval(()=> {
-        pxRight-= 1;
-        box.style.left = pxRight+ "px";
+        pxX-= 1;
+        box.style.left = pxX+ "px";
         
-        if (pxRight < 0)
+        if (pxX < 0)
         {
-            pxRight = 250;
+            pxX = 250;
         }
     }, 10);
 })
 
 movingToBottom.addEventListener("mousedown", ()=>{
     interval = setInterval(()=> {
-        pxTop+= 1;
-        box.style.top = pxTop+ "px";
+        pxY+= 1;
+        box.style.top = pxY+ "px";
         
-        if (pxTop > 250)
+        if (pxY > 250)
         {
-            pxTop = 0;
+            pxY = 0;
         }
     }, 10);
 })
 
 movingToTop.addEventListener("mousedown", ()=>{
     interval = setInterval(()=> {
-        pxTop-= 1;
-        box.style.top = pxTop+ "px";
+        pxY-= 1;
+        box.style.top = pxY+ "px";
         
-        if (pxTop < 0)
+        if (pxY < 0)
         {
-            pxTop = 250;
+            pxY = 250;
         }
     }, 10);
 })
