@@ -17,23 +17,22 @@ body {
 
 
 }
+.outer-box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
 
 .box
 {
-    background: white;
+    position: absolute;
 
-    width: 500px;
-    height: 500px;
-
+    width: 50px;
+    height: 50px;
+    background-color: red;
 }
-
-.animated-box
-{
-    width: 100px;
-    height: 100px;
-    background: red;
-}
-
 .arrow-box
 {
     margin-left: 100px;
@@ -56,6 +55,11 @@ body {
 .btn:hover
 {
     background: red;
+}
+
+.btn:active
+{
+    background: black;
 }
 .left-arrow
 {
